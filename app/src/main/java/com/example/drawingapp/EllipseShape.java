@@ -1,0 +1,30 @@
+package com.example.drawingapp;
+
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
+
+public class EllipseShape extends Shape {
+    @Override
+    public void Show(Canvas canvas, Paint paint, boolean isTemp) {
+        RectF rect = createRectangle();
+        if (!isTemp) {
+            this.setPaintStyle(paint, "FILL");
+            this.setPaintColor(paint, this.colorFill);
+            canvas.drawOval(rect, paint);
+
+            this.setPaintStyle(paint, "STROKE");
+            this.setPaintColor(paint, this.colorStroke);
+            canvas.drawOval(rect, paint);
+        }
+        canvas.drawOval(rect, paint);
+    }
+
+    private RectF createRectangle() {
+        float right = Math.max(xs1, xs2);
+        float left = Math.min(xs1, xs2);
+        float bottom = Math.max(ys1, ys2);
+        float top = Math.min(ys1, ys2);
+        return new RectF(left, top, right, bottom);
+    }
+}

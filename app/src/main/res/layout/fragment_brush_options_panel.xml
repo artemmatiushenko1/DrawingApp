@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BrushOptionsPanel"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Fill color"
+        android:textAllCaps="true"
+        android:textColor="#c2c2c2"
+        android:textSize="12dp" />
+
+    <com.divyanshu.colorseekbar.ColorSeekBar
+        android:id="@+id/color_fill_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cornerRadius="20dp"
+        app:thumbBorder="4dp"
+        app:thumbBorderColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Stroke color"
+        android:textAllCaps="true"
+        android:textColor="#c2c2c2"
+        android:textSize="12dp" />
+
+    <com.divyanshu.colorseekbar.ColorSeekBar
+        android:id="@+id/color_stroke_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cornerRadius="20dp"
+        app:thumbBorder="4dp"
+        app:thumbBorderColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Stroke width"
+        android:textAllCaps="true"
+        android:textColor="#c2c2c2"
+        android:textSize="12dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/stroke_width_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Slider"
+        android:stepSize="1.0"
+        android:value="7"
+        android:valueFrom="1"
+        android:valueTo="15"
+        app:haloRadius="1dp"
+        app:labelBehavior="floating"
+        app:thumbColor="#00B1FB"
+        app:thumbElevation="0dp"
+        app:thumbRadius="9dp"
+        app:thumbStrokeColor="#fff"
+        app:thumbStrokeWidth="4dp"
+        app:tickColorInactive="#00B1FB"
+        app:trackColorActive="#00B1FB"
+        app:trackColorInactive="#2600B1FB"
+        app:trackHeight="9dp" />
+
+</LinearLayout>

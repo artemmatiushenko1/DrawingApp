@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Clear canvas"
+        android:id="@+id/erase_all"
+        android:icon="@drawable/ic_erase"
+        android:iconTint="#c2c2c2"
+        app:showAsAction="always">
+    </item>
+    <item android:title="Undo"
+        android:id="@+id/undo_action"
+        android:icon="@drawable/ic_baseline_undo_24"
+        android:iconTint="#c2c2c2"
+        app:showAsAction="always">
+    </item>
+    <item android:title="Redo"
+        android:id="@+id/redo_action"
+        android:icon="@drawable/ic_baseline_redo_24"
+        android:iconTint="#c2c2c2"
+        app:showAsAction="always">
+    </item>
+</menu>
