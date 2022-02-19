@@ -1,27 +1,28 @@
-# Frontend Mentor - Tip calculator app
+# DrawingApp - Android application
 
-This is my solution to the [Tip calculator app challenge](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
+This is my implementation of an android drawing app where user is able to draw geometric shapes.
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
+### Features
+- Drawing 6 different geometric shapes (point, rectangle, oval, cube, OOLine, line)
+- Undo, redo action and reseting a canvas
+- Table with coordinates of the shapes, by long pressing any table record the corresponding shape will be removed from the canvas
 
 ### Screenshots
-
-
-### Links
-- Live Site URL: [https://distracted-blackwell-3c4989.netlify.app/](https://distracted-blackwell-3c4989.netlify.app/)
+<table>
+  <tr>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/71723893/154800082-fdd0881a-efc1-45ff-afe3-97fedae3f22a.png" alt='example'/></td>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/71723893/154800093-ecd931b5-ca8e-4564-a0ef-e94a3e087e8d.png" alt='example'/></td>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/71723893/154800098-b6b6f937-8b82-4015-8c9d-1ab8d0238c72.png" alt='example'/></td>
+  </tr>
+</table>
 
 ## My process
 
 ### Built with
-- React.JS
-- JavaScript
-- JSX
-- CSS custom properties
-- CSS Grid
+- Java
+- AndroidStudio
+- Material design components
+- [Color SeekBar](https://github.com/divyanshub024/ColorSeekBar)
+- [RecyclerView animators](https://github.com/wasabeef/recyclerview-animators)
