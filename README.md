@@ -8,6 +8,7 @@ This is my implementation of an android drawing app where user is able to draw g
 - Drawing 6 different geometric shapes (point, rectangle, oval, cube, OOLine, line)
 - Undo, redo action and reseting a canvas
 - Table with coordinates of the shapes, by long pressing any table record the corresponding shape will be removed from the canvas
+- Picking color and border width of shapes
 
 ### Screenshots
 <table>
